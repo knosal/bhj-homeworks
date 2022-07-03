@@ -17,8 +17,15 @@ class Game {
   }
 
   registerEvents() {
-    const key = document.querySelector('html');
-    
+    document.addEventListener('keydown', (event) => {
+       if (this.currentSymbol.textContent === event.key) {
+        this.success();
+      } else {
+        this.fail();
+      }
+    });
+
+   /* const key = document.querySelector('html');
     const onClick = (e) => {
       if (e.key.toLowerCase() === this.currentSymbol.textContent.toLowerCase()) {
         this.success();
@@ -27,6 +34,7 @@ class Game {
       }
     }
     key.addEventListener('keyup', onClick);
+    */
   }
 
   success() {
