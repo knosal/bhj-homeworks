@@ -12,6 +12,7 @@ function showSlides(slide) {
         slideIndex = sliderItems.length - 1;
     }
     let i = sliderItems.findIndex(item => item.classList.contains('slider__item_active'));
+    console.log(i);
     sliderItems[i].classList.remove('slider__item_active');
     sliderItems[slideIndex].classList.add('slider__item_active');
 }

@@ -1,10 +1,7 @@
-"use strict"
-
 const modalMain = document.querySelector('#modal_main');
 const closeModal = document.querySelectorAll('.modal__close_times');
 const showModal = document.querySelector('.show-success');
 const showModalActive = document.querySelector('#modal_success');
-
 
 const closeWindow = () => {
   for(let i = 0; i < closeModal.length; i++) {
