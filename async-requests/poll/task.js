@@ -26,8 +26,8 @@ document.onclick = function(e) {
   const id = target.dataset.id;
 
   const xhr = new XMLHttpRequest;
-  xhr.open( 'POST', 'https://netology-slow-rest.herokuapp.com/poll.php' );
-  xhr.setRequestHeader( 'Content-type', 'application/x-www-form-urlencoded' );
+  xhr.open('POST', 'https://netology-slow-rest.herokuapp.com/poll.php');
+  xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
   xhr.send(`vote=${id[0]}&answer=${id[1]}`);
 
   xhr.onreadystatechange = function (){
